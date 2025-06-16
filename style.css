@@ -1,40 +1,30 @@
+body{
+  margin:0;
+  padding:0;
+}
+.homepage{
+  h1{
+    font-size: 75px;
+    margin-top: 12%;
+    margin-left: 2%;
+  }
+}
 .how-it-works{
     padding: 3rem 1rem;
-    background-color: #F0FDF4;
-    color: #1A3D1A;
+    background-color:#1A3D1A;
+    color:white;
     text-align: center;
 }
 .how-it-works h2{
     font-size: 2rem;
-    color: #267E36;
+    color: #f6faf7;
 }
 .how-it-works .subtitle{
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #4A7F52;
+    color: #f1f3f1;
 }
-.steps-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-.step-card{
-    background-color: #fff;
-    border: 1px solid #D4EEDD;
-    border-radius: 10px;
-    padding: 1.5rem;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.1);
-    text-align: left;
-}
-.step-card h3{
-    color: #267E36;
-    margin-bottom: 1rem;
-}
-.step-card ul li{
-    margin: 05rem 0;
-}
+
 
 
 #statistics{
@@ -45,30 +35,27 @@
     }
 }
 .statistics-container {
-    display: flex; /* Use flexbox for layout */
-    /* gap: 3cm; Space between the inner divs */
-    /* padding: 20px; Padding around the container */
-    /* background-color: #f9f9f9; Optional: Light background color */
+    display: flex; 
     margin-top: 2cm;
     font-size: 20px;
 }
 
 .statistic-item {
-    background-color: white; /* Background color for each item */
-    padding: 15px; /* Padding inside each item */
-    position: relative; /* Position relative for pseudo-elements */
+    background-color: white; 
+    padding: 15px; 
+    position: relative; 
     margin-left: 5cm;
 }
 
-/* Add vertical lines */
+
 .statistic-item:not(:last-child)::after {
-    content: ''; /* Create a pseudo-element */
-    position: absolute; /* Position it absolutely */
+    content: ''; 
+    position: absolute; 
     right: -3cm; 
-    top: 0; /* Align to the top */
-    height: 18vh; /* Full height */
-    width: 1px; /* Width of the line */
-    background-color: black; /* Color of the line */
+    top: 0; 
+    height: 18vh; 
+    width: 1px; 
+    background-color: black; 
 }
 
 
@@ -78,8 +65,8 @@
 margin: 0;
 font-family: 'Open Sans', sans-serif;
 line-height: 1.6;
-color: #FFFFFF;
-background-color: #13380B;
+color:#13380B ;
+background-color:white;
 margin-top: 2cm;
 }
 .container {
@@ -95,7 +82,7 @@ text-align: center;
 .section-subtitle {
 font-size: 1.4em;
 text-align: center;
-color: #777;
+color: #0a0202;
 margin-bottom: 70px;
 max-width: 700px;
 margin-left: auto;
@@ -305,10 +292,13 @@ know_imbuto {
 
 .first-image{
     display: flex;
-      gap:30px;
+      gap:2%;
       img{
-        width:30%;
+        width:40%;
+        
+           
         }
+     
     }
    
 
@@ -327,53 +317,26 @@ know_imbuto {
  font-size: 40px;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background: #181818;
-  color: #fff;
-  padding: 32px 40px;
-  font-family: Arial, sans-serif;
-}
 
-.footer-contact {
-  flex: 1;
-  min-width: 200px;
+.contactus{
+     font-size: medium;
 }
-
-.footer-label {
-  font-weight: bold;
-  letter-spacing: 0.5px;
+.footer{
+     background-color: #001904;
+     color: rgb(216, 215, 215);
+     margin: 0px;
+     padding-top: 45px;
+     a{
+      text-decoration: none;
+     }
 }
-
-.footer-explore {
-  flex: 1;
-  min-width: 180px;
+.ally{
+    display: flex;
+    gap: 9cm;
+    padding-left: 50px;
 }
-
-.footer-explore ul {
-  list-style: none;
-  padding: 0;
-  margin: 8px 0 0 0;
-}
-
-.footer-explore ul li {
-  margin-bottom: 8px;
-}
-
-.footer-explore a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.footer-explore a:hover {
-  color: #ff9800;
-}
-
-.footer-social {
-  display: flex;
+.socialicons{
+   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 24px;
@@ -407,14 +370,48 @@ know_imbuto {
   color: #fff;
 }
 
-@media (max-width: 800px) {
-  .footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    padding: 24px 16px;
-  }
-  .footer-social {
-    margin-top: 0;
-  }
+
+
+.bottom{
+    display: flex;
+    gap: 8cm;
+    font-size: medium;
+    padding-top: 20px;
+    border-top:  solid 1px white;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.services{
+    font-size: medium;
+}
+.my-links{
+     font-size: medium;
+}
+.form{
+    padding-bottom: 20px;
+    label{
+        color:white
+    }
+    input{
+        width: 80%;
+        padding: 12px 14px;
+        background-color: #001904;
+        color: white;
+        border: solid 1px white;
+        transition: border-color 60s ease;
+    }
+    label{
+        font-size: medium;
+    }
+}
+.submit-button button{
+    background: none;
+    border: none;
+    background-color:white;
+    width: 65%;
+    color: black;
+    padding: 11px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
 }
