@@ -1,0 +1,17 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    const feedback = document.getElementById('form-feedback');
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            feedback.style.display = 'block';
+            // Optionally, clear the form fields:
+            form.reset();
+            // Hide the message after 5 seconds (optional)
+            setTimeout(() => {
+                feedback.style.display = 'none';
+            }, 5000);
+        });
+    }
+});
